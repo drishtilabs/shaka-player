@@ -799,7 +799,8 @@ shaka.extern.ManifestConfiguration;
  *   forceHTTPS: boolean,
  *   preferNativeHls: boolean,
  *   updateIntervalSeconds: number,
- *   dispatchAllEmsgBoxes: boolean
+ *   dispatchAllEmsgBoxes: boolean,
+ *   prefetchLimit: number
  * }}
  *
  * @description
@@ -910,6 +911,8 @@ shaka.extern.ManifestConfiguration;
  *   The minimum number of seconds to see if the manifest has changes.
  * @property {boolean} dispatchAllEmsgBoxes
  *   If true, all emsg boxes are parsed and dispatched.
+ * @property {number} prefetchLimit
+ *   The maximum number of segments to prefetch.
  *
  * @exportDoc
  */
